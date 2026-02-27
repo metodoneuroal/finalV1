@@ -87,8 +87,11 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
           </div>
           <button
             onClick={() => {
-              if (isLast) setStep("login")
-              else setSlideIndex(slideIndex + 1)
+              if (isLast) {
+                onLogin()
+              } else {
+                setSlideIndex(slideIndex + 1)
+              }
             }}
             className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl font-bold text-sm transition-all active:scale-[0.98]"
             style={{ background: slide.color, color: "#07070D" }}

@@ -358,18 +358,18 @@ export function BrainDump() {
         </div>
       )}
 
-      {/* PRO Section - Locked Content */}
+      {/* Resultados da IA - sempre visiveis */}
       <div className="space-y-4">
         <div className="flex items-center gap-2 mb-1">
           <Crown className="w-3.5 h-3.5 text-[#F59E0B]" />
           <span className="text-xs font-semibold text-[#F59E0B]">
-            Resultados da IA (PRO)
+            Resultados da IA
           </span>
         </div>
 
         {/* Card 1 - Checklist de Elite */}
-        <div className="relative rounded-2xl border border-border/40 overflow-hidden">
-          <div className="p-4 blur-[10px] select-none pointer-events-none" aria-hidden="true">
+        <div className="rounded-2xl border border-border/40 overflow-hidden bg-card/60">
+          <div className="p-4">
             <div className="flex items-center gap-2 mb-3">
               <ListChecks className="w-4 h-4 text-primary" />
               <h3 className="text-sm font-semibold text-foreground">
@@ -385,26 +385,11 @@ export function BrainDump() {
               ))}
             </ul>
           </div>
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/60 backdrop-blur-[2px]">
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 border border-primary/20 mb-3 animate-neon-pulse">
-              <Lock className="w-6 h-6 text-primary" />
-            </div>
-            <p className="text-[11px] text-muted-foreground mb-3 text-center px-4">
-              Conteudo gerado pela IA apos analise completa
-            </p>
-            <a
-              href="#"
-              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#F59E0B] to-[#F97316] text-[#07070D] text-xs font-bold transition-all active:scale-[0.97] shadow-[0_0_20px_rgba(245,158,11,0.3)]"
-            >
-              <Crown className="w-3.5 h-3.5" />
-              Ativar NEURON PRO
-            </a>
-          </div>
         </div>
 
         {/* Card 2 - Insights Cognitivos */}
-        <div className="relative rounded-2xl border border-border/40 overflow-hidden">
-          <div className="p-4 blur-[10px] select-none pointer-events-none" aria-hidden="true">
+        <div className="rounded-2xl border border-border/40 overflow-hidden bg-card/60">
+          <div className="p-4">
             <div className="flex items-center gap-2 mb-3">
               <Sparkles className="w-4 h-4 text-[#34D399]" />
               <h3 className="text-sm font-semibold text-foreground">
@@ -420,26 +405,11 @@ export function BrainDump() {
               ))}
             </ul>
           </div>
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/60 backdrop-blur-[2px]">
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#34D399]/10 border border-[#34D399]/20 mb-3 animate-neon-pulse">
-              <Lock className="w-6 h-6 text-[#34D399]" />
-            </div>
-            <p className="text-[11px] text-muted-foreground mb-3 text-center px-4">
-              Insights personalizados pela IA neural
-            </p>
-            <a
-              href="#"
-              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#F59E0B] to-[#F97316] text-[#07070D] text-xs font-bold transition-all active:scale-[0.97] shadow-[0_0_20px_rgba(245,158,11,0.3)]"
-            >
-              <Crown className="w-3.5 h-3.5" />
-              Ativar NEURON PRO
-            </a>
-          </div>
         </div>
 
         {/* Card 3 - Protocolo de Alto Desempenho */}
-        <div className="relative rounded-2xl border border-border/40 overflow-hidden">
-          <div className="p-4 blur-[10px] select-none pointer-events-none" aria-hidden="true">
+        <div className="rounded-2xl border border-border/40 overflow-hidden bg-card/60">
+          <div className="p-4">
             <div className="flex items-center gap-2 mb-3">
               <FileText className="w-4 h-4 text-[#A78BFA]" />
               <h3 className="text-sm font-semibold text-foreground">
@@ -457,21 +427,6 @@ export function BrainDump() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/60 backdrop-blur-[2px]">
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#A78BFA]/10 border border-[#A78BFA]/20 mb-3 animate-neon-pulse">
-              <Lock className="w-6 h-6 text-[#A78BFA]" />
-            </div>
-            <p className="text-[11px] text-muted-foreground mb-3 text-center px-4">
-              Protocolo personalizado pela IA
-            </p>
-            <a
-              href="#"
-              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#F59E0B] to-[#F97316] text-[#07070D] text-xs font-bold transition-all active:scale-[0.97] shadow-[0_0_20px_rgba(245,158,11,0.3)]"
-            >
-              <Crown className="w-3.5 h-3.5" />
-              Ativar NEURON PRO
-            </a>
           </div>
         </div>
       </div>
